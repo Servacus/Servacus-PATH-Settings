@@ -1,0 +1,137 @@
+[
+    {
+        "name": "websites_high",
+        "label": "Allow Website Ports (High Security)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "443"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            }
+        ]
+    },
+    {
+        "name": "websites_low",
+        "label": "Allow Website Ports (Low Security)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "443"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "21"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            }
+        ]
+    },
+    {
+        "name": "database",
+        "label": "Allow MySQL & Redis",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "3306"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "6379"
+            }
+        ]
+    },
+    {
+        "name": "minecraft_basic",
+        "label": "Allow Minecraft Ports (Basic)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25565"
+            }
+        ]
+    },
+    {
+        "name": "minecraft_advanced",
+        "label": "Allow Minecraft Ports (Advanced)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25565"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25566"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25567"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25568"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25569"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25570"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25571"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25572"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25573"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25574"
+            }
+        ]
+    }
+]

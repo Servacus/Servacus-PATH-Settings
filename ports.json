@@ -50,7 +50,7 @@
     },
         {
         "name": "rdp_low",
-        "label": "Allow default Windows RDP",
+        "label": "Allow Default Windows RDP",
         "description": "",
         "ports": [
             {
@@ -61,21 +61,10 @@
         ]
     },
     {
-        "name": "sshd",
-        "label": "Allow default SSH Port 22",
-        "description": "",
-        "ports": [
-            {
-                "whitelist": "true",
-                "protocol": "tcp",
-                "dst_port": "22"
-            }
-        ]
-    },
-    {
         "name": "database",
         "label": "Allow MySQL & Redis",
         "description": "",
+        "warning": true
         "ports": [
             {
                 "whitelist": "true",
@@ -90,71 +79,247 @@
         ]
     },
     {
-        "name": "minecraft_basic",
-        "label": "Allow Minecraft Ports (Basic)",
+        "name": "virtualizor",
+        "label": "Allow Virtualizor Ports ",
         "description": "",
         "ports": [
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25565"
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "442"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "4081-4085"
             }
         ]
     },
     {
-        "name": "minecraft_advanced",
-        "label": "Allow Minecraft Ports (Advanced)",
+        "name": "plesk",
+        "label": "Allow Plesk Ports ",
         "description": "",
         "ports": [
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25565"
+                "dst_port": "8087"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25566"
+                "dst_port": "8443"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25567"
+                "dst_port": "80"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25568"
+                "dst_port": "443"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25569"
+                "dst_port": "21-22"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25570"
+                "dst_port": "8447"
+            }
+        ]
+    },
+    {
+        "name": "cpanel",
+        "label": "Allow CPanel Ports ",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25571"
+                "dst_port": "442"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25572"
+                "dst_port": "22"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25573"
+                "dst_port": "2082-2087"
             },
             {
                 "whitelist": "true",
                 "protocol": "tcp",
-                "dst_port": "25574"
+                "dst_port": "2095-2097"
+            }
+        ]
+    },
+    {
+        "name": "direct_admin",
+        "label": "Allow Direct Admin Ports ",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "442"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "2222-2223"
+            }
+        ]
+    },
+    {
+        "name": "litespeed",
+        "label": "Allow Litespeed Ports ",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "442"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "7080"
+            }
+        ]
+    },
+    {
+        "name": "cyberpanel",
+        "label": "Allow Cyber Panel Ports ",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "442"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "8090"
+            }
+        ]
+    },
+    {
+        "name": "sonic_panel",
+        "label": "Allow Sonic Panel Ports ",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": ""
+            }
+        ]
+    },
+    {
+        "name": "minecraft_1",
+        "label": "Allow Minecraft Ports (Dedicated IP/Port)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "80"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "442"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "2082-2083"
+            },
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "8002-8006"
+            }
+        ]
+    },
+    {
+        "name": "minecraft_2",
+        "label": "Allow Minecraft Ports (Small IP/Port Range)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25565-25570"
+            }
+        ]
+    },
+    {
+        "name": "minecraft_3",
+        "label": "Allow Minecraft Ports (Large IP/Port Range)",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "25565-25600"
             }
         ]
     }

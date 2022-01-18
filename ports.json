@@ -64,7 +64,7 @@
         "name": "database",
         "label": "Allow MySQL & Redis",
         "description": "",
-        "warning": true
+        "warning": true,
         "ports": [
             {
                 "whitelist": "true",

@@ -48,6 +48,30 @@
             }
         ]
     },
+        {
+        "name": "rdp_low",
+        "label": "Allow default Windows RDP",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "3389"
+            }
+        ]
+    },
+    {
+        "name": "sshd",
+        "label": "Allow default SSH Port 22",
+        "description": "",
+        "ports": [
+            {
+                "whitelist": "true",
+                "protocol": "tcp",
+                "dst_port": "22"
+            }
+        ]
+    },
     {
         "name": "database",
         "label": "Allow MySQL & Redis",
